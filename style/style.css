@@ -157,6 +157,7 @@ h6 {
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
+  margin: 10px 15px 10px 0;
 }
 
 .btn:hover {
@@ -210,11 +211,38 @@ h3 {
   margin: 15px 0;
 }
 
+h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--text-black-900);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+h5 {
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-black-900);
+  text-transform: capitalize;
+}
+
+.shadow-dark {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.main-container {
+  display: flex;
+}
+
+.main-content {
+  width: 100%;
+}
+
 .section {
   background: var(--bg-black-900);
   min-height: 100vh;
   display: block;
-  position: fixed;
   left: 270px;
   top: 0;
   right: 0;
@@ -232,23 +260,28 @@ h3 {
   max-width: 100%;
 }
 
+.buttons {
+  margin-top: 30px;
+}
+
 .aside {
-  width: 270px;
-  height: 100%;
-  background: var(--bg-black-100);
-  position: fixed;
+  width: 350px;
+  height: 100vh;
+  position: relative;
   left: 0;
   top: 0;
   z-index: 10;
   padding: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   border-right: 1px solid var(--bg-black-50);
 }
 .aside .logo {
-  position: absolute;
+  position: relative;
   top: 30px;
+  width: 100%;
   font-size: 30px;
 }
 .aside .logo a {
@@ -329,7 +362,8 @@ h3 {
   background: var(--skin-color);
 }
 .aside .nav {
-  margin-top: 30px;
+  margin-top: 100px;
+  width: 100%;
 }
 .aside .nav p {
   margin-bottom: 15px;
@@ -430,9 +464,172 @@ h3 {
   flex: 0 0 60%;
   max-width: 60%;
 }
+.about .info-item {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.about .info-item p {
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--text-black-900);
+  border-bottom: 1px solid var(--bg-black-50);
+}
+.about .info-item span {
+  font-weight: 400;
+  color: var(--text-black-700);
+  margin-left: 5px;
+  display: inline-block;
+}
 .about .skills {
   flex: 0 0 40%;
   max-width: 40%;
+}
+.about .skill-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+.about .progress {
+  position: relative;
+  background-color: var(--bg-black-50);
+  height: 7px;
+  width: 100%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.about .progress-in {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--skin-color);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.about .skill-percent {
+  position: absolute;
+  right: 0;
+  color: var(--text-black-900);
+  top: -40px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.about .education,
+.about .experience {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+}
+.about .timeline-box {
+  width: 98%;
+}
+.about .timeline {
+  background-color: var(--bg-black-100);
+  padding: 30px 15px;
+  border: 1px solid var(--bg-black-50);
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+.about .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+.about .timeline-item:last-child {
+  padding-bottom: 0;
+}
+.about .timeline-item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: var(--skin-color);
+}
+.about .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--skin-color);
+}
+.about .timeline-date {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: var(--text-black-700);
+}
+.about .fa {
+  margin-right: 5px;
+}
+.about .timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: var(--text-black-900);
+}
+
+.service .service-item {
+  margin-bottom: 30px;
+  flex: 0 33.33%;
+  max-width: 33.33%;
+}
+.service .service-item-inner {
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  border-radius: 10px;
+  padding: 30px 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.service .icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.service .fa {
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--skin-color);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.service .service-item-inner:hover {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.service .service-item-inner:hover .icon {
+  background: var(--skin-color);
+}
+.service .service-item-inner:hover .fa {
+  font-size: 25px;
+  color: #FFFFFF;
 }
 
 .hidden {
