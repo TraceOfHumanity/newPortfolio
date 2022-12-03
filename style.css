@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #9ad751, #2196f3);
+}
+
+.menu {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  cursor: pointer;
+  font-size: 24px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.menu.active .toggle {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 2px #333, 0 0 0 8px #FFFFFF;
+  transform: rotate(300deg);
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+}
+
+.menu p {
+  position: absolute;
+  left: 0;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transform-origin: 140px;
+  transform: rotate(calc(360deg/8 * var(--i)));
+  -webkit-transform: rotate(calc(360deg/8 * var(--i)));
+  -moz-transform: rotate(calc(360deg/8 * var(--i)));
+  -ms-transform: rotate(calc(360deg/8 * var(--i)));
+  -o-transform: rotate(calc(360deg/8 * var(--i)));
+  scale: 0;
+  transition-delay: calc(0.05s * var(--i));
+
+}
+
+.menu p a {
+  position: relative;
+  display: flex;
+  transform: rotate(calc(360deg/-8 * var(--i)));
+  -webkit-transform: rotate(calc(360deg/-8 * var(--i)));
+  -moz-transform: rotate(calc(360deg/-8 * var(--i)));
+  -ms-transform: rotate(calc(360deg/-8 * var(--i)));
+  -o-transform: rotate(calc(360deg/-8 * var(--i)));
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr);
+  font-size: 24px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.menu.active p {
+  scale: 1;
+}

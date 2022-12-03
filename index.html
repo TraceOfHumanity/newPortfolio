@@ -7,14 +7,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style/style.css">
-  <!-- <link rel="stylesheet" href="style/fm.revealator.jquery.css"> -->
-  <link rel="stylesheet" href="fm.revealator.jquery.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
   <!-- ====================================main container -->
   <div class="main-container">
+    <div class="menu">
+      <div class="toggle">
+        <i class="fa-solid fa-palette"></i>
+      </div>
+      <p style="--i:0;--clr:#eb403f;">
+          <a href="#">
+            <i class="fa-solid fa-brush"></i>
+          </a>
+        </p>
+        <p style="--i:1;--clr:#2b405b;">
+          <a href="#">
+            <i class="fa-solid fa-brush"></i>
+          </a>
+        </p>
+        <p style="--i:2;--clr:#3982ab;">
+          <a href="#">
+            <i class="fa-solid fa-brush"></i>
+          </a>
+        </p>
+        <p style="--i:3;--clr:#009a9f;">
+          <a href="#">
+            <i class="fa-solid fa-brush"></i>
+          </a>
+        </p>
+        <p style="--i:4;--clr:#fb5d70;">
+          <a href="#">
+            <i class="fa-solid fa-brush"></i>
+          </a>
+        </p>
+        <p style="--i:5;--clr:#903447;">
+          <a href="#">
+            <i class="fa-solid fa-brush"></i>
+          </a>
+        </p>
+        <p style="--i:6;--clr:#523447;">
+          <a href="#">
+            <i class="fa-solid fa-brush"></i>
+          </a>
+        </p>
+        <p style="--i:7;--clr:#3f524c;">
+          <a href="#">
+            <i class="fa-solid fa-brush"></i>
+          </a>
+        </p>
+    </div>
     <!-- ====================================aside -->
     <aside class="aside">
       <div class="logo">
@@ -43,7 +86,7 @@
               <h3 class="my-profession">I'm a <span class="typing">web deweloper</span></h3>
               <p>I'm a web Designer with extensive experience for over 10 years.My expertise is to create and website
                 design, graphic design, and many more...</p>
-              <a href="#contact" class="btn hire-me">Hire Me</a>
+              <!-- <a href="#contact" class="btn hire-me">Hire Me</a> -->
             </div>
             <div class="cover-img">
               <div class="home-img ">
@@ -58,12 +101,12 @@
       <secrion class="about section ">
         <div class="cantainer">
           <div class="row">
-            <div class="section-title padd-15">
+            <div class="section-title">
               <h2>About Me</h2>
             </div>
           </div>
           <div class="row">
-            <div class="about-content padd-15">
+            <div class="about-content">
               <div class="row">
                 <div class="about-text">
                   <h3>I'm Alex Ovchar and <span>Web Developer</span></h3>
@@ -319,7 +362,7 @@
       <section class="service section ">
         <div class="container">
           <div class="row">
-            <div class="section-title padd-15">
+            <div class="section-title">
               <h2>Services</h2>
             </div>
           </div>
@@ -397,7 +440,7 @@
               <h3>Last Projects:</h3>
             </div>
           </div>
-          <div class="row portfolio-content">
+          <div class="row portfolio-content padd-15">
             <div class="portfolio-item">
               <div class="portfolio-img">
                 <a href="https://azalex020204.github.io/GulpAzAlexIndustries/index.html" target="_blank">
@@ -639,12 +682,10 @@
       <section class="contact section ">
         <div class="container">
           <div class="row">
-            <div class="section-title padd-15">
+            <div class="section-title">
               <h2>Contact Me</h2>
             </div>
           </div>
-          <h3 class="contact-title">Have You Any Questions?</h3>
-          <h4 class="contact-sub-title">I'M AT YOUR SERVICES</h4>
           <div class="row contact-info">
             <div class="contact-info-item">
               <div class="icon">
@@ -655,17 +696,10 @@
             </div>
             <div class="contact-info-item">
               <div class="icon">
-                <i class="fa fa-phone"></i>
+                <i class="fa fa-brands fa-telegram"></i>
               </div>
               <h4>Telegram</h4>
               <p><a href="https://t.me/AzAlexXx" target="_blank">+380987392702</a></p>
-            </div>
-            <div class="contact-info-item">
-              <div class="icon">
-                <i class="fa fa-map-marker-alt"></i>
-              </div>
-              <h4>Office</h4>
-              <p>Islamabad</p>
             </div>
             <div class="contact-info-item">
               <div class="icon">
@@ -676,16 +710,16 @@
             </div>
             <div class="contact-info-item">
               <div class="icon">
-                <i class="fa fa-globe-europe"></i>
+                <i class="fa fa-brands fa-instagram"></i>
               </div>
-              <h4>Website</h4>
-              <p>Islamabad</p>
+              <h4>Email</h4>
+              <p><a href="https://www.instagram.com/azalex._/" target="_blank">azalex</a></p>
             </div>
             <div class="contact-info-item">
               <div class="icon">
                 <i class="fa fa-globe-europe"></i>
               </div>
-              <h4>Second portfolio site :</h4>
+              <h4>Second portfolio site</h4>
               <p><a href="https://azalex020204.github.io/GulpAzAlexIndustries/index.html">GulpAzAlexIndustries</a></p>
             </div>
           </div>
@@ -693,12 +727,9 @@
       </section>
     </div>
     <!-- ====================================/main content -->
-  </div>
+
   <!-- ====================================/main container -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-  <script src="js/jquery-1.11.3.min.js"></script>
-  <script src="js/fm.revealator.jquery.js"></script>
-  <!-- <script src="js/fm.revealator.jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
   <script src="js/main.js"></script>
   <script type="text/javascript">
@@ -706,13 +737,7 @@
       max: 15,
       speed: 400,
       scale: 1.1,
-    });
-    VanillaTilt.init(document.querySelectorAll(".service-item"), {
-      max: 15,
-      speed: 400,
-      scale: 1.1,
-    });
-  
+    });  
   </script>
 </body>
 
