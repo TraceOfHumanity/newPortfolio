@@ -130,6 +130,14 @@ h6 {
   --skin-color: #20548b;
 }
 
+html.light {
+  --bg-black-900: #c8f900;
+}
+
+html.darck {
+  --bg-black-900: #292d1b;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -324,7 +332,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333;
+  color: var(--skin-color);
   cursor: pointer;
   font-size: 24px;
   transition: all 0.5s ease;
@@ -387,6 +395,7 @@ p {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
 }
 
 .menu.active p {

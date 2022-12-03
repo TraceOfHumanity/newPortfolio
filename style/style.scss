@@ -140,6 +140,14 @@ h6 {
   --skin-color: #20548b;
 }
 
+html.light {
+  --bg-black-900: #c8f900;
+}
+
+html.darck {
+  --bg-black-900: #292d1b;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -344,7 +352,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333;
+  color: var(--skin-color);
   cursor: pointer;
   font-size: 24px;
   transition: all 0.5s ease;
@@ -353,11 +361,13 @@ p {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 
-  
+
 }
+
 .toggle i {
   pointer-events: none;
 }
+
 .menu.active .toggle {
   pointer-events: none;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 2px #333, 0 0 0 8px #FFFFFF;
@@ -385,7 +395,7 @@ p {
   -o-transform: rotate(calc(360deg/8 * var(--i)));
   scale: 0;
   transition-delay: calc(0.05s * var(--i));
-margin: 0;
+  margin: 0;
 }
 
 .menu p a {
@@ -408,11 +418,13 @@ margin: 0;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
 }
 
 .menu.active p {
   scale: 1;
 }
+
 
 // =======================================================aside
 .aside {
