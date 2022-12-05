@@ -131,15 +131,39 @@ h6 {
 }
 
 html.theme1 {
-  --bg-black-900: ;
-  --bg-black-100: #332e59;
+  --bg-black-900: #312c3d80;
+  --bg-black-100: #332e59a3;
   --bg-black-50: #e8dfec;
   --text-black-900: #ffffff;
   --text-black-700: #c8c8c8;
   --skin-color: #fe423f;
 }
 html.theme1 body {
-  background: #26294c;
+  background: linear-gradient(151deg, #26294c 0%, #506ba2 100%);
+}
+
+html.theme2 {
+  --bg-black-900: #3d2c2c80;
+  --bg-black-100: #59332ea3;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #04061b;
+  --text-black-700: #c8c8c8;
+  --skin-color: #efaf07;
+}
+html.theme2 body {
+  background: linear-gradient(151deg, #350616 0%, rgb(209, 43, 1) 100%);
+}
+
+html.theme3 {
+  --bg-black-900: #2e1d054d;
+  --bg-black-100: #341f0080;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #62a36c;
+  --text-black-700: #c8c8c8;
+  --skin-color: #7eccbe;
+}
+html.theme3 body {
+  background: linear-gradient(151deg, #0a342d 0%, rgb(82, 45, 0) 100%);
 }
 
 body {
@@ -420,7 +444,7 @@ p {
   -o-transform: rotate(calc(-45deg * var(--i)));
   width: 30px;
   height: 30px;
-  background: #FFFFFF;
+  background: var(--clr);
   justify-content: center;
   align-items: center;
   color: var(--clr);
@@ -674,7 +698,7 @@ p {
   width: 100%;
 }
 .about .buttons__item a {
-  color: #FFFFFF;
+  color: var(--text-black-900);
 }
 .about .info-item {
   width: 48%;
@@ -833,7 +857,7 @@ p {
 }
 .service .service-item-inner:hover .fa {
   font-size: 25px;
-  color: #FFFFFF;
+  color: var(--text-black-900);
 }
 
 .portfolio {
@@ -986,6 +1010,7 @@ p {
 
 @media (max-width: 1024px) {
   .section {
+    padding-top: 80px;
     left: 0;
   }
   .main-content {
@@ -1031,9 +1056,6 @@ p {
     font-size: 14px;
     width: 20px;
     height: 20px;
-  }
-  .section {
-    padding: 20px 10px;
   }
   .home {
     padding-top: 5%;
