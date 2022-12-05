@@ -35,19 +35,44 @@ var typed = new Typed('.typing', {
 // =======================/typing animation========================
 // =======================aside========================
 const nav = document.querySelector('.nav')
+const allSection = document.querySelectorAll('.section')
+const totalSection = allSection.length
 const navList = nav.querySelectorAll('p')
 const totalNavList = navList.length;
 console.log(totalNavList)
 
 for (let i = 0; i < totalNavList; i++) {
   console.log(navList[i])
-  const a = navList.querySelector('a');
-  // a.addEventListener('click', function () {
-  //   for (let j = 0; j < totalNavList; j++) {
-  //     navList[j].querySelector('a').classList.remove('active')
-  //   }
-  //   this.classList.add('active')
-  //   showSection(this)
-  // })
+
+  const a = navList[i].querySelector('a');
+  console.log(a)
+
+  a.addEventListener('click', function () {
+    console.log(this)
+
+    for (let j = 0; j < totalNavList; j++) {
+      navList[j].querySelector('a').classList.remove('active')
+    }
+    this.classList.add('active')
+    showSection(this)
+  })
+}
+function showSection(element) {
+  for (let i = 0; i < totalSection; i++) {
+    allSection[i].classList.remove('show')
+  }
+  console.log(element.getAttribute('href').split('#'))
+  const href = element.getAttribute('href').split('#')
+  const target = href[1];
+  console.log(target)
+  document.querySelector('#' + target).classList.add('show')
 }
 // =======================/aside========================
+const navTogglerBtn = document.querySelector(".nav-toggler");
+const aside = document.querySelector(".aside");
+navTogglerBtn.addEventListener("click", () => {
+  asideSectionTogglerBtn();
+})
+function asideSectionTogglerBtn() {
+  aside.classList.toggle("open");
+}

@@ -304,14 +304,14 @@ p {
   right: 0;
   z-index: 0;
   opacity: 0;
-  padding: 20px 20px;
+  padding: 80px 20px;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
 .section .container {
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 60px;
 }
 .section.show {
@@ -344,7 +344,7 @@ p {
 .menu {
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 10px;
   width: 140px;
   height: 140px;
   display: flex;
@@ -449,6 +449,12 @@ p {
   align-items: center;
   justify-content: start;
   border-right: 1px solid var(--bg-black-50);
+  z-index: 100;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
 }
 .aside .logo {
   white-space: nowrap;
@@ -498,8 +504,8 @@ p {
   border: 1px solid var(--bg-black-50);
   cursor: pointer;
   position: fixed;
-  left: 300px;
-  top: 20px;
+  left: 30px;
+  top: 35px;
   background: var(--bg-black-100);
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -979,12 +985,25 @@ p {
 }
 
 @media (max-width: 1024px) {
+  .section {
+    left: 0;
+  }
   .main-content {
     margin: 0;
   }
   .aside {
     position: absolute;
-    display: none;
+    left: -100%;
+  }
+  .aside.open {
+    position: relative;
+    left: 0;
+  }
+  .aside.open .nav-toggler {
+    left: 240px;
+  }
+  .aside .nav-toggler {
+    display: flex;
   }
   .service .service-content {
     gap: 10px;
@@ -997,6 +1016,22 @@ p {
   }
 }
 @media (max-width: 768px) {
+  .menu {
+    opacity: 0.5;
+    width: 100px;
+    height: 100px;
+  }
+  .menu:hover {
+    opacity: 1;
+  }
+  .menu p {
+    transform-origin: 50px;
+  }
+  .menu p a {
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+  }
   .section {
     padding: 20px 10px;
   }
