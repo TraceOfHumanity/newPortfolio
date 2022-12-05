@@ -17,42 +17,42 @@
       <div class="toggle">
         <i class="fa-solid fa-palette"></i>
       </div>
-      <p class="color__theme " id="light" style="--i:0;--clr:#eb403f;">
+      <p class="color__theme " id="theme1" style="--i:0;--clr:#2C7873;">
         <a href="#">
           <i class="fa-solid fa-brush"></i>
         </a>
       </p>
-      <p class="color__theme " id="darck"  style="--i:1;--clr:#2b405b;">
+      <p class="color__theme " id="theme2" style="--i:1;--clr:#fe423f;">
         <a href="#">
           <i class="fa-solid fa-brush"></i>
         </a>
       </p>
-      <p class="color__theme" style="--i:2;--clr:#3982ab;">
+      <p class="color__theme" id="theme3" style="--i:2;--clr:#3982ab;">
         <a href="#">
           <i class="fa-solid fa-brush"></i>
         </a>
       </p>
-      <p class="color__theme" style="--i:3;--clr:#009a9f;">
+      <p class="color__theme" id="theme4" style="--i:3;--clr:#009a9f;">
         <a href="#">
           <i class="fa-solid fa-brush"></i>
         </a>
       </p>
-      <p class="color__theme" style="--i:4;--clr:#fb5d70;">
+      <p class="color__theme" id="theme5" style="--i:4;--clr:#fb5d70;">
         <a href="#">
           <i class="fa-solid fa-brush"></i>
         </a>
       </p>
-      <p class="color__theme" style="--i:5;--clr:#903447;">
+      <p class="color__theme" id="theme6" style="--i:5;--clr:#903447;">
         <a href="#">
           <i class="fa-solid fa-brush"></i>
         </a>
       </p>
-      <p class="color__theme" style="--i:6;--clr:#523447;">
+      <p class="color__theme" id="theme7" style="--i:6;--clr:#523447;">
         <a href="#">
           <i class="fa-solid fa-brush"></i>
         </a>
       </p>
-      <p class="color__theme" style="--i:7;--clr:#3f524c;">
+      <p class="color__theme" id=" " style="--i:7;--clr:#3f524c;">
         <a href="#">
           <i class="fa-solid fa-brush"></i>
         </a>
@@ -61,24 +61,24 @@
     <!-- ====================================aside -->
     <aside class="aside">
       <div class="logo">
-        <a href="#"><span>AzAlex</span> industries</a>
+        <a href="#"><h1>AzAlex</h1></a>
       </div>
       <div class="nav-toggler">
         <span></span>
       </div>
       <nav class="nav">
-        <p><a href="#" class="active"><i class="fa fa-home"></i>Home</a></p>
-        <p><a href="#"><i class="fa fa-user"></i>About</a></p>
-        <p><a href="#"><i class="fa fa-list"></i>Services</a></p>
-        <p><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></p>
-        <p><a href="#"><i class="fa fa-comments"></i>Contacts</a></p>
+        <p><a class="active" href="#home"><i class="fa fa-home"></i>Home</a></p>
+        <p><a href="#about"><i class="fa fa-user"></i>About</a></p>
+        <p><a href="#services"><i class="fa fa-list"></i>Services</a></p>
+        <p><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></p>
+        <p><a href="#contacts"><i class="fa fa-comments"></i>Contacts</a></p>
       </nav>
     </aside>
     <!-- ====================================/aside -->
     <!-- ====================================main content -->
     <div class="main-content">
       <!-- ====================================home -->
-      <section class="home section">
+      <section class="home section " id="home">
         <div class="container">
           <div class="row">
             <div class="home-info ">
@@ -98,7 +98,7 @@
       </section>
       <!-- ====================================/home -->
       <!-- ====================================about -->
-      <secrion class="about section ">
+      <secrion class="about section " id="about">
         <div class="cantainer">
           <div class="row">
             <div class="section-title">
@@ -134,7 +134,8 @@
                       <p>Country:<span>Ukraine</span></p>
                     </li>
                     <li class="info-item">
-                      <p>YouTube:<span><a href="https://www.youtube.com/@azalex8008" target="_blank">AzAlex</a></span>
+                      <p>YouTube:<span><a href="https://www.youtube.com/@azalex8008" target="_blank">AzAlex</a>/<a
+                            href="https://www.youtube.com/@azmusic1185">AzMusic</a></span>
                       </p>
                     </li>
                   </ul>
@@ -359,7 +360,7 @@
       </secrion>
       <!-- ====================================/about -->
       <!-- ====================================services -->
-      <section class="service section ">
+      <section class="service section " id="services">
         <div class="container">
           <div class="row">
             <div class="section-title">
@@ -428,7 +429,7 @@
       </section>
       <!-- ====================================/services -->
       <!-- ====================================portfolio -->
-      <section class="portfolio section ">
+      <section class="portfolio section show" id="portfolio">
         <div class="container">
           <div class="row">
             <div class="section-title">
@@ -682,7 +683,7 @@
         </div>
       </section>
       <!-- ====================================/portfolio -->
-      <section class="contact section ">
+      <section class="contact section " id="contacts">
         <div class="container">
           <div class="row">
             <div class="section-title">
@@ -715,7 +716,7 @@
               <div class="icon">
                 <i class="fa fa-brands fa-instagram"></i>
               </div>
-              <h4>Email</h4>
+              <h4>Instagram</h4>
               <p><a href="https://www.instagram.com/azalex._/" target="_blank">azalex</a></p>
             </div>
             <div class="contact-info-item">
@@ -735,6 +736,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
       integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+      referrerpolicy="no-referrer"></script>
+      <!-- <script src="js/scrollToElemements.js"></script> -->
+      <script src="js/selectTypeBtn.js"></script>
     <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">
@@ -742,6 +747,7 @@
         max: 15,
         speed: 400,
         scale: 1.1,
+        loop:true,
       });  
     </script>
 </body>
