@@ -132,9 +132,7 @@ h6 {
 // =======================================================/reset
 :root {
   --bg-black-900: rgba(61, 44, 44, 0.5);
-  ;
   --bg-black-100: rgba(61, 44, 44, 0.5);
-  ;
   --bg-black-50: #e8dfec;
   --text-black-900: #0a112b;
   --text-black-700: #ff9d9d;
@@ -178,6 +176,58 @@ html.theme3 {
 
   body {
     background: linear-gradient(151deg, #0a342d 0%, rgb(82 45 0) 100%);
+  }
+}
+
+html.theme4 {
+  --bg-black-900: #171e3040;
+  --bg-black-100: #171e30a3;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #ffffff;
+  --text-black-700: #c8c8c8;
+  --skin-color: #4682b1;
+
+  body {
+    background: linear-gradient(151deg, #191d33 0%, rgb(78 107 117) 100%);
+  }
+}
+
+html.theme5 {
+  --bg-black-900: #1c173040;
+  --bg-black-100: linear-gradient(-34deg, rgb(16 147 149 / 50%), #000);
+  --bg-black-50: #009987;
+  --text-black-900: #ffffff;
+  --text-black-700: #4ca297;
+  --skin-color: #087880;
+  --skin-color2: linear-gradient(120deg, #005c63 4.47%, #e29500 95.53%);
+
+  body {
+    background: linear-gradient(151deg, #000000 0%, rgb(0 57 31) 100%);
+
+    &::before {
+      background: linear-gradient(#3bb21a, #1eade9);
+    }
+
+    &::after {
+      background: linear-gradient(#185224, #ff0057);
+    }
+  }
+
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--skin-color2);
+  }
+
+  h2::before {
+    background: var(--skin-color2);
+  }
+
+  h2::after {
+    background: var(--skin-color2);
+  }
+
+  .btn {
+    background: var(--skin-color2);
   }
 }
 
@@ -474,11 +524,11 @@ p {
   -ms-transition: .5s;
   -o-transition: .5s;
   transform-origin: 70px;
-  transform: rotate(calc(360deg/8 * var(--i)));
-  -webkit-transform: rotate(calc(360deg/8 * var(--i)));
-  -moz-transform: rotate(calc(360deg/8 * var(--i)));
-  -ms-transform: rotate(calc(360deg/8 * var(--i)));
-  -o-transform: rotate(calc(360deg/8 * var(--i)));
+  transform: rotate(calc(360deg/6 * var(--i)));
+  -webkit-transform: rotate(calc(360deg/6 * var(--i)));
+  -moz-transform: rotate(calc(360deg/6 * var(--i)));
+  -ms-transform: rotate(calc(360deg/6 * var(--i)));
+  -o-transform: rotate(calc(360deg/6 * var(--i)));
   scale: 0;
   transition-delay: calc(0.05s * var(--i));
   margin: 0;
@@ -487,11 +537,11 @@ p {
 .menu p a {
   position: relative;
   display: flex;
-  transform: rotate(calc(360deg/-8 * var(--i)));
-  -webkit-transform: rotate(calc(360deg/-8 * var(--i)));
-  -moz-transform: rotate(calc(360deg/-8 * var(--i)));
-  -ms-transform: rotate(calc(360deg/-8 * var(--i)));
-  -o-transform: rotate(calc(360deg/-8 * var(--i)));
+  transform: rotate(calc(360deg/-6 * var(--i)));
+  -webkit-transform: rotate(calc(360deg/-6 * var(--i)));
+  -moz-transform: rotate(calc(360deg/-6 * var(--i)));
+  -ms-transform: rotate(calc(360deg/-6 * var(--i)));
+  -o-transform: rotate(calc(360deg/-6 * var(--i)));
   width: 30px;
   height: 30px;
   background: var(--clr);
@@ -748,6 +798,10 @@ p {
 // =======================================================/home
 // =======================================================about
 .about {
+  .container {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
   a {
     color: var(--skin-color);
   }
@@ -1237,11 +1291,40 @@ p {
 
       .nav-toggler {
         left: 240px;
+
+        span {
+          background: rgba(0, 0, 0, 0);
+
+          &::before {
+            top: 0px;
+            transform: rotate(45deg);
+            transition: all 1s ease-in-out;
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+          }
+
+          &::after {
+            top: 0px;
+            transform: rotate(-45deg);
+            transition: all 1s ease-in-out;
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+          }
+        }
       }
     }
 
     .nav-toggler {
       display: flex;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
     }
 
 
