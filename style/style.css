@@ -196,6 +196,9 @@ html.theme5 body::before {
 html.theme5 body::after {
   background: linear-gradient(#185224, #ff0057);
 }
+html.theme5 .about .skill-item:hover {
+  background: var(--skin-color2);
+}
 html.theme5 ::-webkit-scrollbar-thumb {
   background: var(--skin-color2);
 }
@@ -206,6 +209,9 @@ html.theme5 h2::after {
   background: var(--skin-color2);
 }
 html.theme5 .btn {
+  background: var(--skin-color2);
+}
+html.theme5 .service .service-item-inner:hover .icon {
   background: var(--skin-color2);
 }
 
@@ -703,8 +709,7 @@ p {
 }
 
 .about .container {
-  padding-top: 80px;
-  padding-bottom: 60px;
+  margin-top: 80px;
 }
 .about a {
   color: var(--skin-color);

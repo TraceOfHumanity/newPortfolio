@@ -212,6 +212,9 @@ html.theme5 {
       background: linear-gradient(#185224, #ff0057);
     }
   }
+  .about .skill-item:hover {
+    background: var(--skin-color2);
+}
 
 
   ::-webkit-scrollbar-thumb {
@@ -228,6 +231,12 @@ html.theme5 {
 
   .btn {
     background: var(--skin-color2);
+  }
+  .service .service-item-inner:hover {
+
+    .icon {
+      background: var(--skin-color2);
+    }
   }
 }
 
@@ -799,9 +808,9 @@ p {
 // =======================================================about
 .about {
   .container {
-    padding-top: 80px;
-    padding-bottom: 60px;
-}
+    margin-top: 80px;
+  }
+
   a {
     color: var(--skin-color);
   }
