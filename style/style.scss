@@ -393,6 +393,9 @@ p {
   position: relative;
   width: 100%;
   transform-style: preserve-3d;
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
 }
 
 .section {
@@ -421,9 +424,7 @@ p {
     z-index: 2;
     opacity: 1;
   }
-  ::-webkit-scrollbar {
-    width: 3px;
-  }
+  
 }
 
 
@@ -881,7 +882,7 @@ p {
   .experience {
     width: 50%;
     margin-top: 30px;
-    padding: 5px;
+    padding: 3px;
   }
 
   .timeline-box {

@@ -365,6 +365,9 @@ p {
   width: 100%;
   transform-style: preserve-3d;
 }
+.main-content ::-webkit-scrollbar {
+  width: 3px;
+}
 
 .section {
   background: var(--bg-black-900);
@@ -390,9 +393,6 @@ p {
 .section.show {
   z-index: 2;
   opacity: 1;
-}
-.section ::-webkit-scrollbar {
-  width: 3px;
 }
 
 .section-title {
@@ -797,7 +797,7 @@ p {
 .about .experience {
   width: 50%;
   margin-top: 30px;
-  padding: 5px;
+  padding: 3px;
 }
 .about .timeline-box {
   width: 100%;
